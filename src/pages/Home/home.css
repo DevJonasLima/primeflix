@@ -1,0 +1,77 @@
+.App {
+    background: #f2f2f2;
+}
+.container {
+    background: #f2f2f2;
+}
+.lista-filmes {
+    max-width: 800px;
+    margin: 14px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+
+/* Por padrão, os artigos ocupam toda a largura */
+.lista-filmes article {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+@media (min-width: 600px) {
+    .lista-filmes {
+        justify-content: left;
+    }
+
+    .lista-filmes article {
+        width: 30%;
+    }
+}
+
+.lista-filmes strong{
+    margin-bottom: 14px;
+    text-align: center;
+    font-size: 22px;
+    display: block;
+    height: 40px;
+}
+
+.lista-filmes img{
+    width: 226px;
+    max-height: 340px;
+    display: block;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    object-fit: contain;
+    margin: auto;
+}
+
+.lista-filmes a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    font-size: 24px;
+    background-color: #116FEB;
+    text-decoration: none;
+    color: #fff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 226px;
+    margin: auto;
+}
+
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 14px;
+}
